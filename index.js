@@ -4,13 +4,13 @@
  * @returns {Promise<{ width: number, height: number }>}
  */
 
-export default (url) =>
+export default url =>
   new Promise((resolve, reject) => {
     const img = new Image();
     img.onload = () => {
-      const { width: imageWidth, height: imageHeight } = img;
-      resolve({ imageHeight, imageWidth });
+      const { width, height } = img;
+      resolve({ width, height });
     };
-    img.onerror = (error) => reject(error);
+    img.onerror = error => reject();
     img.src = url;
   });

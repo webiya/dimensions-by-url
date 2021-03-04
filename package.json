@@ -1,9 +1,9 @@
 {
   "name": "dimensions-by-url",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Get images width and height by url.",
   "repository": "https://github.com/webiya/dimensions-by-url.git",
-  "author": "Or-Yam, <oryamn@webiya.co.il",
+  "author": "or-yam, <oryamn@webiya.co.il>",
   "license": "MIT",
   "main": "index.js",
   "scripts": {

@@ -16,27 +16,27 @@ yarn add dimensions-by-url
 
 ## Usage Example
 
-### Async-Await
+```javascript
+import getImageDimensions from 'dimensions-by-url';
 
-```JavaScript
-import getImageDimensions from 'dimensions-by-url'
+const url = 'https://pngimg.com/uploads/killer_whale/killer_whale_PNG15.png';
 
+// Async-Await
 try {
-    const {width, height} = await getImageDimensions(url)
+  const { width, height } = await getImageDimensions(url);
+  console.log('width: ', width);
+  console.log('height: ', height);
+} catch (error) {
+  console.log(error);
 }
-catch{
-    // catch error
-}
-```
 
-### Promise .then
-
-```JavaScript
-import getImageDimensions from 'dimensions-by-url'
-
-getImageDimensions(url).then(({width,height})=> // use width and height
-).catch((error)=> // catch error
-);
+// Promise .then
+getImageDimensions(url)
+  .then(({ width, height }) => {
+    console.log('width: ', width);
+    console.log('height: ', height);
+  })
+  .catch(error => console.log(error));
 ```
 
 ---
