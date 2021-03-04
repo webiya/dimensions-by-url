@@ -1,0 +1,11 @@
+{
+  "name": "dimensions-by-url",
+  "version": "1.0.0",
+  "description": "Get images width and height by url.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "or-yam, webiya",
+  "license": "MIT"
+}
